@@ -19,8 +19,8 @@ O RagChat2 utiliza técnicas de recuperação de informações e geração de li
 ## Instalação
 
 ```bash
-git clone https://github.com/seuusuario/RagChat2.git
-cd RagChat2
+git clone https://github.com/gitdoartur/rag_chatbox
+cd rag_chatbox
 pip install -r requirements.txt
 ```
 
