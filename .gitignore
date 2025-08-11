@@ -1,0 +1,14 @@
+# Ignorar ambiente virtual
+venv/
+env/
+__pycache__/
+*.pyc
+chrome_langchain_db/
+
+# Ignorar arquivos de IDE (exemplo PyCharm)
+.idea/
+.vscode/
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
