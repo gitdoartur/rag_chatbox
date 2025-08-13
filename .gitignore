@@ -4,7 +4,7 @@ env/
 __pycache__/
 *.pyc
 chrome_langchain_db/
-
+venv_PI/
 # Ignorar arquivos de IDE (exemplo PyCharm)
 .idea/
 .vscode/

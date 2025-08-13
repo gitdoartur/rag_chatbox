@@ -12,7 +12,7 @@ with open("TCC.csv", "rb") as f:
     result = chardet.detect(f.read())
     print(result)  # {'encoding': 'Windows-1252', 'confidence': 0.73}
 
-df = pd.read_csv("TCC.csv", encoding=result['encoding'])
+df = pd.read_csv("TCC.csv", encoding=result['encoding'], sep=';')
 
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
@@ -29,7 +29,7 @@ if add_documents:
             #metadata={"rating": row["Rating"], "date": row["Date"]},
 
             #page_content=row["Texto Introdutório"] + " " + row["Documento Comprobatório"] + " " + row["Carga Horária Máxima"]+" " + row["Texto"],
-            page_content=row["tema"]+" " + row["info"] ,
+            page_content=row["Tema"]+" " + row["info"] ,
             metadata={},
 
             id=str(i)
